@@ -102,6 +102,10 @@ def main():
     dist_gower = calcularGowerMatrix(data_x=df_dummies, cat_features=cat_features)
 
     if dist_gower is not None:
+        # Exibir a matriz de Gower
+        st.markdown('''### Matriz de Gower''', unsafe_allow_html=True)
+        st.dataframe(pd.DataFrame(dist_gower).head())
+
         # Cálculo da matriz de ligação
         gdv = squareform(X=dist_gower, force='tovector')
         Z = linkage(y=gdv, method='complete')
@@ -123,6 +127,11 @@ def main():
         }).set_index('Grupo').style.format({'Quantidade': lambda x: '{:d}'.format(x)}))
 
         st.table(pd.crosstab(index=df.VisitorType, columns=[df.grupo_3, df.Revenue], normalize='index').applymap(lambda x: f'{x*100:.0f} %'))
+
+        # Pair Plot final
+        st.markdown('''## Pair Plot''', unsafe_allow_html=True)
+        sns.pairplot(data=df[['BounceRates', 'Revenue', 'SpecialDay', 'grupo_3', 'grupo_4']], hue='Revenue')
+        st.pyplot(plt)
 
     else:
         st.error("Não foi possível calcular a matriz de Gower. Verifique os logs para mais detalhes.")
