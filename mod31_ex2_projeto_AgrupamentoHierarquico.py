@@ -64,26 +64,11 @@ def dn(color_threshold: float, num_groups: int, Z: list) -> None:
 def main():
     # Configuração inicial da página da aplicação
     st.set_page_config(
-        page_title="EBAC | Módulo 31 | Projeto de Agrupamento hierárquico",
-        page_icon='https://raw.githubusercontent.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/main/ebac-course-utils/media/icon/favicon.ico', 
+        page_title="EBAC | Módulo 31 | Projeto de Agrupamento hierárquico", 
         layout="wide",
         initial_sidebar_state="expanded",
     )
 
-
-    st.sidebar.markdown('''
-                        <div style="text-align:center">
-                            <img src="https://raw.githubusercontent.com/rhatiro/previsao-renda/main/ebac-course-utils/media/logo/newebac_logo_black_half.png" alt="ebac-logo" width=50%>
-                        </div>
-
-                        # **Profissão: Cientista de Dados**
-                        ### **Projeto de Agrupamento Hierárquico**
-
-                        **Por:** [Roberto Hatiro Nishiyama](https://www.linkedin.com/in/rhatiro/)<br>
-                        **Data:** 30 de novembro de 2023.<br>
-
-                        ---
-                        ''', unsafe_allow_html=True)
     
 
     with st.sidebar.expander(label="Índice", expanded=False):
@@ -138,28 +123,6 @@ def main():
                 ''', language='python')
         
 
-    st.sidebar.markdown('''
-                        ---
-                        *Baseado no [Exercício 2](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/blob/main/Mo%CC%81dulo%2030%20-%20Hiera%CC%81rquicos%20%3A%20aglomerativos/Exerci%CC%81cio%202/mod30_tarefa02-roberto_hatiro.ipynb) do [Módulo 30](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/tree/main/Mo%CC%81dulo%2030%20-%20Hiera%CC%81rquicos%20%3A%20aglomerativos).*
-                        ''')
-
-
-    st.markdown('''
-                <div style="text-align:center">
-                    <img src="https://raw.githubusercontent.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/main/ebac-course-utils/media/logo/ebac_logo-data_science.png" alt="ebac_logo-data_science" width="100%">
-                </div>
-
-                ---
-
-                <!-- # **Profissão: Cientista de Dados** -->
-                ### **Módulo 31** | Streamlit V (Exercício 2)
-
-                **Aluno:** [Roberto Hatiro Nishiyama](https://www.linkedin.com/in/rhatiro/)<br>
-                **Data:** 30 de novembro de 2023.
-
-                ---
-                ''', unsafe_allow_html=True)
-
 
     st.markdown('''
                 <a name="intro"></a> 
@@ -213,7 +176,7 @@ def main():
     with st.echo():
         ""
         # Ler o arquivo CSV 'online_shoppers_intention.csv' e armazenar os dados em um DataFrame chamado df
-        df = pd.read_csv('https://raw.githubusercontent.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/main/Modulo_31_-_Streamlit_V/Exercicio_2/online_shoppers_intention.csv')
+        df = pd.read_csv('https://raw.githubusercontent.com/AndrePanini/M31_Projeto_Streamlit/main/online_shoppers_intention.csv')
 
         # Exibir o DataFrame df, mostrando os dados carregados do arquivo CSV
         st.dataframe(df)
