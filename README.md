@@ -1,14 +1,3 @@
-<img src="https://raw.githubusercontent.com/rhatiro/previsao-renda/main/ebac-course-utils/media/logo/newebac_logo_black_half.png" alt="ebac-logo">
-
----
-
-# [**Profissão: Cientista de Dados**](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados)
-### [**Módulo 31** | Streamlit V](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/tree/main/Modulo_31_-_Streamlit_V) | [Exercício 2](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/tree/main/Modulo_31_-_Streamlit_V/Exercicio_2)
-
-**Por:** [Roberto Hatiro Nishiyama](https://www.linkedin.com/in/rhatiro/)<br>
-**Data:** 30 de novembro de 2023.
-
----
 
 # **Projeto de Agrupamento Hierárquico - Streamlit**
 
