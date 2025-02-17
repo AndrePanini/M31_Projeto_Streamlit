@@ -140,4 +140,4 @@ from scipy.cluster.hierarchy import fcluster
 
 ---
 
-*Baseado no [Exercício 2](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/blob/main/Mo%CC%81dulo%2030%20-%20Hiera%CC%81rquicos%20%3A%20aglomerativos/Exerci%CC%81cio%202/mod30_tarefa02-roberto_hatiro.ipynb) do [Módulo 30](https://github.com/rhatiro/Curso_EBAC-Profissao_Cientista_de_Dados/tree/main/Mo%CC%81dulo%2030%20-%20Hiera%CC%81rquicos%20%3A%20aglomerativos).*
+
